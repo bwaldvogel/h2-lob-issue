@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/bwaldvogel/h2-lob-issue.png?branch=master)](https://travis-ci.org/bwaldvogel/h2-lob-issue)
-
 # H2 "Lob not found" Issue #
 
 Reproducible failing unit test for the [H2 1.4 "Lob not found" issue][google-groups].
@@ -25,6 +23,9 @@ On Windows:
 ### The stacktrace ###
 
 The `H2LobIssueTest.testConcurrentLobModification` fails due to the `Lob not found` exception in H2.
+
+On Travis: [![Build Status](https://travis-ci.org/bwaldvogel/h2-lob-issue.png?branch=master)](https://travis-ci.org/bwaldvogel/h2-lob-issue)
+
 
 ```
 Caused by:
