@@ -1,14 +1,14 @@
 [![Build Status](https://travis-ci.org/bwaldvogel/h2-lob-issue.png?branch=master)](https://travis-ci.org/bwaldvogel/h2-lob-issue)
 
-# H2 Lob Issue #
+# H2 "Lob not found" Issue #
 
-Reproducible failing unit test for the H2 [1.4.{181,182} BLOB related issue][google-groups].
+Reproducible failing unit test for the [H2 1.4 "Lob not found" issue][google-groups].
 
 
 ## Howto ##
 
-Prerequisites
-	- Java 8
+Prerequisites:
+  - Java 8
 
 On Linux:
 

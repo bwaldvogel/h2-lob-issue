@@ -9,7 +9,7 @@ compileJava.options.encoding = 'UTF-8'
 
 ext {
     title = 'h2-log-issue'
-    description = 'Reproducible unit test for the H2 1.4.{181,182} Lob issue'
+    description = 'Reproducible unit test for the H2 1.4 "Lob not found" issue'
     url = 'https://groups.google.com/forum/#!topic/h2-database/t0Bg5paQZ1U'
 }
 
