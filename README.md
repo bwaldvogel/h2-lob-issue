@@ -1,4 +1,4 @@
-# H2 "Lob not found" Issue #
+# H2 1.4 "Lob not found" Issue #
 
 Reproducible failing unit test for the [H2 1.4 "Lob not found" issue][google-groups].
 
