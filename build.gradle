@@ -1,0 +1,50 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+version = '1.0'
+
+sourceCompatibility = 1.8
+
+compileJava.options.encoding = 'UTF-8'
+
+ext {
+    title = 'h2-log-issue'
+    description = 'Reproducible unit test for the H2 1.4.{181,182} Lob issue'
+    url = 'https://groups.google.com/forum/#!topic/h2-database/t0Bg5paQZ1U'
+}
+
+repositories {
+    mavenCentral()
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.2'
+}
+
+ext {
+	springVersion = '4.1.2.RELEASE'
+}
+
+dependencies {
+
+	compile group: 'org.springframework', name: 'spring-core', version: springVersion
+	compile group: 'org.springframework', name: 'spring-context', version: springVersion
+	compile group: 'org.springframework', name: 'spring-orm', version: springVersion
+	compile group: 'org.springframework', name: 'spring-tx', version: springVersion
+
+	compile group: 'org.hibernate', name: 'hibernate', version: '3.5.4-Final'
+	compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '3.5.4-Final'
+	compile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.1-api', version: '1.0.0.Final'
+
+    compile group: 'com.h2database', name: 'h2', version: '1.4.182'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.7'
+
+    // For Java 8: https://code.google.com/p/reflections/issues/detail?id=178
+    compile group: 'org.javassist', name: 'javassist', version: '3.18.2-GA'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+	testCompile group: 'org.springframework', name: 'spring-test', version: springVersion
+
+    testRuntime group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.2'
+    testRuntime group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.3.7'
+}
