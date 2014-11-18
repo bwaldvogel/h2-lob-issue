@@ -7,5 +7,4 @@ root(INFO, ["CONSOLE"])
 
 logger("org.h2", TRACE)
 
-logger("org.hibernate.SQL", DEBUG)
 logger("de.bwaldvogel", DEBUG)

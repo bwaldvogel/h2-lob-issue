@@ -23,6 +23,7 @@ task wrapper(type: Wrapper) {
 
 ext {
 	springVersion = '4.1.2.RELEASE'
+	hibernateVersion = '4.3.7.Final'
 }
 
 dependencies {
@@ -32,8 +33,7 @@ dependencies {
 	compile group: 'org.springframework', name: 'spring-orm', version: springVersion
 	compile group: 'org.springframework', name: 'spring-tx', version: springVersion
 
-	compile group: 'org.hibernate', name: 'hibernate', version: '3.5.4-Final'
-	compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '3.5.4-Final'
+	compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: hibernateVersion
 	compile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.1-api', version: '1.0.0.Final'
 
     compile group: 'com.h2database', name: 'h2', version: '1.4.182'
