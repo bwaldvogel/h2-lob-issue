@@ -1,4 +1,4 @@
-# H2 1.4 "Lob not found" Issue #
+# H2 1.4 "Lob not found" Issue - Fixed in 1.4.183! #
 
 Reproducible failing unit test for the [H2 1.4 "Lob not found" issue][google-groups].
 

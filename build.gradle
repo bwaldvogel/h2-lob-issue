@@ -36,7 +36,7 @@ dependencies {
 	compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: hibernateVersion
 	compile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.1-api', version: '1.0.0.Final'
 
-    compile group: 'com.h2database', name: 'h2', version: '1.4.182'
+    compile group: 'com.h2database', name: 'h2', version: '1.4.183'
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.7'
 
     // For Java 8: https://code.google.com/p/reflections/issues/detail?id=178
